@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Water Tank Monitor</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+      <h1>Smart Water Tank Monitor</h1>
+    </header>
+    <div id="info-card" class="info-card">
+      <div class="level-display">
+        <h2>Water Level:</h2>
+        <p id="waterLevel">-- cm</p>
+      </div>
+      <div class="status-display">
+        <h2>Tank Status:</h2>
+        <p id="tankStatus">--</p>
+      </div>
+    </div>
+    <div class="chart-section">
+      <canvas id="waterLevelChart"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
